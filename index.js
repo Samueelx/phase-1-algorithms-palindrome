@@ -4,6 +4,10 @@ function isPalindrome(word) {
 
 /* 
   Add your pseudocode here
+  1. Convert the input string to an array.
+  2. Use Array.reverse() method to reverse the array
+  3. Convert this array to string.
+  4. Compare the two strings.
 */
 
 /*
@@ -16,7 +20,14 @@ if (require.main === module) {
   console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
 
-  console.log("");
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("mom"));
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("madam"));
+
+  console.log("Expecting: false");
+  console.log("=>", isPalindrome("license"));
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
