@@ -1,5 +1,10 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const initialArray = word.split("");
+  const reversed = initialArray.reverse();
+  const secondString = reversed.join("");
+
+  return word === secondString;
 }
 
 /* 
@@ -28,6 +33,9 @@ if (require.main === module) {
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome("license"));
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome('civic'));
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
